@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: footstone-sample
+  profiles:
+    active: dev
+  cloud:
+    config:
+      enabled: true
+      name: ${spring.application.name}
+      uri: http://localhost:8080/sdk/properties
+
+
